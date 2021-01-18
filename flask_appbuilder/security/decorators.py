@@ -117,7 +117,6 @@ def has_access(f):
         return redirect(
             url_for(
                 self.appbuilder.sm.auth_view.__class__.__name__ + ".login",
-                next=request.url,
             )
         )
 
