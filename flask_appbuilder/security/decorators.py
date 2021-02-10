@@ -116,8 +116,7 @@ def has_access(f):
             flash(as_unicode(FLAMSG_ERR_SEC_ACCESS_DENIED), "danger")
         return redirect(
             url_for(
-                self.appbuilder.sm.auth_view.__class__.__name__ + ".login",
-                next=request.url,
+                self.appbuilder.sm.auth_view.__class__.__name__ + ".login"
             )
         )
 
